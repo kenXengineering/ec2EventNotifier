@@ -1,10 +1,10 @@
 # EC2 Event Notifier
 
-The EC2 Event Notifier is a simple utility that can send notification for EC2 Events.  An EC2 Event is a scheduled event
+The EC2 Event Notifier is a simple utility that can send notifications for EC2 Events.  An EC2 Event is a scheduled event
 by AWS, usually for alerting that an instance needs to be restarted or retired.  This utility will look at all AWS EC2
 instances and send a notification when an event is found.
 
-The EC2 Event Notifier currently supports Slack Webhooks.  To enable the Slack Webhook, star the application with 
+The EC2 Event Notifier currently supports Slack Webhooks.  To enable the Slack Webhook, start the application with 
 the `-slackWebHookURL` flag.
 
 Example:
