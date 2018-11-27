@@ -55,7 +55,7 @@ func (payload *Payload) AddAttachment(attachment *Attachment) *Payload {
 }
 
 // Regex used to check if an event is Completed and should not be sent in the notification
-var completedRegexp = regexp.MustCompile("^Completed")
+var completedRegexp = regexp.MustCompile(`^\[Completed].*`)
 
 // Notify will craft a Slack Payload and post the message to the Webhook URL.
 func (s *Slack) Notify(instance *ec2.InstanceStatus) error {
